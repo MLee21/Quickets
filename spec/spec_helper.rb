@@ -23,7 +23,6 @@ RSpec.configure do |config|
 
   Kernel.srand config.seed
   config.backtrace_exclusion_patterns << %r{/gems/}
-=end
 end
 
 VCR.configure do |config|

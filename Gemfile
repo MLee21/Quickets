@@ -14,6 +14,7 @@ gem 'bower-rails'
 gem 'hurley'
 gem 'figaro'
 gem "omniauth-google-oauth2"
+gem "rails_12factor", group: :production
 
 
 group :development, :test do
