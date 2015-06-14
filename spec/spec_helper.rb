@@ -22,6 +22,7 @@ RSpec.configure do |config|
   config.order = :random
 
   Kernel.srand config.seed
+  config.backtrace_exclusion_patterns << %r{/gems/}
 =end
 end
 
@@ -29,3 +30,4 @@ VCR.configure do |config|
   config.cassette_library_dir = "spec/vcr_cassettes"
   config.hook_into :webmock
 end
+
