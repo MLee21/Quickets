@@ -11,6 +11,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
 gem 'angular-rails-templates'
 gem 'bower-rails'
+gem 'hurley'
+gem 'figaro'
+gem "omniauth-google-oauth2"
 
 
 group :development, :test do
@@ -21,6 +24,12 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+end
+
+group :test do 
   gem 'teaspoon-mocha'
+  gem 'mocha'
+  gem 'vcr'
+  gem 'webmock'
 end
 
