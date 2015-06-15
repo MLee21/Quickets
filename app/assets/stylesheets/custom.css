@@ -1,0 +1,23 @@
+.image {
+  height: 500px !important;
+}
+
+.image {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+
+.image:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 5%);
+    width: 300px;
+    height: 300px;
+}
+

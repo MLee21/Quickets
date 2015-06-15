@@ -1,10 +1,17 @@
-<div class='landing'>
-  <div class="welcome">
-    <h1 color="color: white" style="color: black";>Welcome to Quickets!</h1><br>
-    <a href="#" id="google-login">
-      <%= link_to "Authenticate with Google!", '/auth/google_oauth2' %>
-    </a>
-    <br><br>
-    <h4 color="color: black" style="color: black";>Receive alerts on concert tickets so that you don't miss out on the next biggest event!</h4>
-  </div>
-</div>
+<ul class="small-block-grid-2 large-block-grid-2 images">
+    <li>
+      <%= image_tag("bonobo.jpg", class: "image") %>
+    </li>
+    <li>
+      <%= image_tag("ludovico-einaudi.jpg", class: "image") %>
+    </li>
+    <li>
+      <%= image_tag("theknocks.jpg", class: "image") %>
+    </li>
+    <li>
+      <%= image_tag("black-keys.jpg", class: "image") %>
+    </li>
+</ul>
+
+<%= link_to image_tag("music-note-circle.png", class: "circle"), '/auth/google_oauth2' %>
+

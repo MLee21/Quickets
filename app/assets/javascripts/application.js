@@ -18,7 +18,11 @@
 //= require angular-rails-templates
 
 
-$(function(){ $(document).foundation(); });
+$(function(){
+  $(window).load(function() {
+    $(document).foundation();
+  });
+});
 
 'use strict';
  
