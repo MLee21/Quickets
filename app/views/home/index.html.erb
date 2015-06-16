@@ -13,5 +13,11 @@
     </li>
 </ul>
 
-<%= link_to image_tag("music-note-circle.png", class: "circle"), '/auth/google_oauth2' %>
+
+<div class="flip-3d">
+  <figure>
+    <%= image_tag("record.png", class: "circle") %>
+    <figcaption><%= link_to "Login with Gmail", '/auth/google_oauth2' %></figcaption>
+  </figure>
+</div>
 
