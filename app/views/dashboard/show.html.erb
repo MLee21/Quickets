@@ -1,18 +1,5 @@
 <div class="background">  
-  <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false", data-options="sticky_on: [small, medium, large]">
-    <ul class="title-area">
-      <li class="name">
-        <h1 class="logo"><a href="#">Quickets</a></h1>
-      </li>
-    </ul>
-    <section class="top-bar-section">
-      <ul class="right">
-        <li>Tracked Artists</li>
-        <li>Browse</li>
-        <li class="logout"><%= link_to image_tag("logout.png"), '/logout', :method=>:delete %></li>
-      </ul>
-    </section>
-  </nav>
+    <%= render :partial => 'partials/navbar' %>
     <p id="text_1">Tracking your favorite artists</p>
     <p id="text_2">so that you don't miss out on the next big show</p>
 </div>

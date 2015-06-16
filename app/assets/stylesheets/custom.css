@@ -99,8 +99,12 @@ a {
   color: white;
   padding: 10px;
   margin: 10px;
-  font-family: 'Amatic SC', cursive;
   font-size: 2em;
+}
+
+.right li a {
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 1em !important;
 }
 
 .logout {
@@ -137,3 +141,14 @@ a {
   margin-top: 30%;
   margin-left: 40%;
 }
+
+.tracked li .default {
+  padding: 10px;
+}
+
+.events .info {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+

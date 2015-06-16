@@ -1,0 +1,14 @@
+  <nav class="top-bar" data-topbar role="navigation" data-options="is_hover: false", data-options="sticky_on: [small, medium, large]">
+    <ul class="title-area">
+      <li class="name">
+        <h1 class="logo"><a href="/dashboard">Quickets</a></h1>
+      </li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li><%= link_to "Tracked Artists", tracked_artist_path %></li>
+        <li><%= link_to "Nearby Events", events_path %></li>
+        <li class="logout"><%= link_to image_tag("logout.png"), '/logout', :method=>:delete %></li>
+      </ul>
+    </section>
+  </nav>
