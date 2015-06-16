@@ -1,0 +1,154 @@
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+
+.image {
+  height: 500px !important;
+}
+
+.image {
+    opacity: 0.4;
+    filter: alpha(opacity=40); 
+}
+
+.image:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); 
+}
+
+div.flip-3d {
+  perspective: 1200px;
+  width: 30%;
+  float: left;
+  top: 50%;
+  position: absolute;
+}
+
+div.flip-3d figure {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  font-size: 1.6rem;
+}
+
+div.flip-3d figure img {
+  width: 100%; 
+  height: auto;
+}
+
+div.flip-3d figure figcaption {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  transform: rotateY(.5turn) translateZ(1px);
+  background: rgba(255,255,255,0.9);
+  text-align: center;
+  padding-top: 45%;
+  opacity: -4.4;
+  transition: 1s .5s opacity;
+}
+
+div.flip-3d:hover figure { 
+  transform: rotateY(.5turn); 
+}
+
+div.flip-3d:hover figure figcaption {
+  opacity: 1; 
+}
+
+
+div.flip-3d figure:after {
+  content: " "; display: block;
+  height: 8vw; width: 100%;
+  transform: rotateX(90deg);
+  background-image: radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+div.flip-3d figure {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  font-size: 1.6rem;
+  left: 116%;
+  margin-top: 0% !important;
+}
+
+a {
+  font-family: 'Bad Script', cursive;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.logo a {
+  font-size: 3em;
+}
+
+.top-bar {
+  height: 15% !important;
+}
+
+
+.top-bar .name h1, .top-bar .name h2, .top-bar .name h3, .top-bar .name h4, .top-bar .name p, .top-bar .name span {
+  font-size: 1.0625rem;
+  line-height: 2.8125rem;
+  margin: 26px !important;
+}
+
+.right li {
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  font-size: 2em;
+}
+
+.right li a {
+  font-family: 'Amatic SC', cursive !important;
+  font-size: 1em !important;
+}
+
+.logout {
+  width: 100px;
+  height: 80px;
+}
+
+.background {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: asset-url('background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+}
+
+#text_1 {
+  float: left;
+  margin-left: 10%;
+  margin-top: 3%;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+}
+
+#text_2 {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+  margin-top: 30%;
+  margin-left: 40%;
+}
+
+.tracked li .default {
+  padding: 10px;
+}
+
+.events .info {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
