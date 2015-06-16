@@ -10,8 +10,6 @@ class BandsInTownService
     response_body = parse(response.body)
   end
 
-
-
   private
 
   def parse(response)

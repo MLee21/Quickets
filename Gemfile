@@ -14,6 +14,7 @@ gem 'bower-rails'
 gem 'hurley'
 gem 'figaro'
 gem "omniauth-google-oauth2"
+gem 'responders'
 gem "rails_12factor", group: :production
 
 
@@ -32,5 +33,7 @@ group :test do
   gem 'mocha'
   gem 'vcr'
   gem 'webmock'
+  gem 'selenium-webdriver'
+  gem 'database-cleaner'
 end
 
