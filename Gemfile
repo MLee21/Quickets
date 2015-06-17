@@ -34,6 +34,6 @@ group :test do
   gem 'vcr'
   gem 'webmock'
   gem 'selenium-webdriver'
-  gem 'database-cleaner'
+  gem 'database_cleaner'
 end
 

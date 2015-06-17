@@ -1,5 +1,7 @@
 require 'webmock/rspec'
 require 'vcr'
+require 'capybara/rspec'
+
 WebMock.allow_net_connect!(:net_http_connect_on_start => true)
 
 RSpec.configure do |config|
@@ -13,7 +15,6 @@ RSpec.configure do |config|
   config.filter_run :focus
   config.run_all_when_everything_filtered = true
   config.example_status_persistence_file_path = "spec/examples.txt"
-  config.disable_monkey_patching!
   if config.files_to_run.one?
     config.default_formatter = 'doc'
   end
