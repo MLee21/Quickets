@@ -50,4 +50,12 @@ RSpec.describe BandsInTownService, type: :model do
     end
   end
 
+  it "returns nearby events with no state specified" do 
+    VCR.use_cassette("get_gv_events") do 
+      location = "Greenwood Village, CO"
+      nearby_events = service.nearby_events(location)
+      expect(nearby_events.first[:artists][0][:name]).to eq("First Responders")
+    end
+  end
+
 end

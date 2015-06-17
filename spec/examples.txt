@@ -1,10 +1,16 @@
-example_id                                               | status | run_time        |
--------------------------------------------------------- | ------ | --------------- |
-./spec/features/user_oauth_authentication_spec.rb[1:1]   | passed | 0.55022 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:1] | passed | 0.00769 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:2] | passed | 0.00562 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:3] | passed | 0.00898 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:4] | passed | 0.00735 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:5] | passed | 0.00687 seconds |
-./spec/services/bands_in_town_service_spec.rb[1:1]       | passed | 0.00705 seconds |
-./spec/services/bands_in_town_service_spec.rb[1:2]       | passed | 0.01498 seconds |
+example_id                                                | status | run_time        |
+--------------------------------------------------------- | ------ | --------------- |
+./spec/features/user_oauth_authentication_spec.rb[1:1]    | passed | 0.57767 seconds |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:1] | passed | 0.00186 seconds |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:2] | passed | 0.0014 seconds  |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:3] | passed | 0.00172 seconds |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:4] | passed | 0.00104 seconds |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:5] | passed | 0.00112 seconds |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:1]  | passed | 0.0579 seconds  |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:2]  | passed | 0.00889 seconds |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:3]  | passed | 0.00745 seconds |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:4]  | passed | 0.01448 seconds |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:5]  | passed | 0.00724 seconds |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:6]  | passed | 0.00715 seconds |
+./spec/services/bands_in_town_service_spec.rb[1:1]        | passed | 0.00589 seconds |
+./spec/services/bands_in_town_service_spec.rb[1:2]        | passed | 0.00723 seconds |
