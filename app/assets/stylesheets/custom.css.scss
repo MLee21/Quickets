@@ -132,6 +132,7 @@ a {
   color: white;
   font-family: 'Amatic SC', cursive;
   font-size: 3em;
+  position: absolute;
 }
 
 #text_2 {
@@ -140,6 +141,7 @@ a {
   font-size: 3em;
   margin-top: 30%;
   margin-left: 40%;
+  position: absolute;
 }
 
 .tracked li .default {
@@ -150,5 +152,24 @@ a {
   width: 200px;
   height: 200px;
   padding: 20px;
+}
+
+ .search_image {
+  width: 50px;
+  height: 50px;
+  margin-top: -203%;
+  margin-left: 50%;
+}
+
+.has-form {
+  list-style: none;
+}
+
+ .search_bar input[type=text] {
+  margin-top: -200%;
+  margin-top: -51%;
+  margin-left: 67%;
+  width: 57%;
+  border-radius: 35px;
 }
 

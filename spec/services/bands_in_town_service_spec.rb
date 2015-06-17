@@ -9,8 +9,6 @@ RSpec.describe BandsInTownService, type: :model do
 
   it "returns a list of a single artist's events" do
     VCR.use_cassette("get_artist_events") do 
-      # store artist in database
-      # artist = Artist.create(name: 'Metric')
       artist = "Metric"
       events = service.get_artist_events(artist)
 
