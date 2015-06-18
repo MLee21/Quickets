@@ -8,6 +8,7 @@ class GeolocatorController < ApplicationController
     respond_with session, location: events_path
   end
 
+  private
 
   def convert_state_to_abbreviation(state)
     grab_states = Geolocator.new

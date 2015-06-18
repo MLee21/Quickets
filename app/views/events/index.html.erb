@@ -1,20 +1,7 @@
 <%= render :partial => 'partials/navbar' %>
 <div class="small-block-grid-6 events">
-  <%= @events %>
+  <% @events.flat_map do |event| event[:artists] end.map do |artist| artist[:name] end.each do |artist| %>
+  <li class="info"><%= artist %></li>
+  <li><%= link_to image_tag("add_music.png", class: "add-music"), tracked_artists_path(name: artist), method: :post %></li>
+  <% end.uniq %>
 </div>
-<!-- <div class="small-block-grid-6 events">
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-</div>
-<div class="small-block-grid-6 events">
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-  <li><%= image_tag("default.jpg", class: "info") %></li>
-</div> -->

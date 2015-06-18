@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614192243) do
+ActiveRecord::Schema.define(version: 20150618193026) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "artists", force: :cascade do |t|
+    t.string "name"
+  end
+
+  create_table "tracked_artists", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "artist_id"
+  end
+
+  add_index "tracked_artists", ["artist_id"], name: "index_tracked_artists_on_artist_id", using: :btree
+  add_index "tracked_artists", ["user_id"], name: "index_tracked_artists_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string "email"
@@ -25,4 +37,6 @@ ActiveRecord::Schema.define(version: 20150614192243) do
     t.string "image_url"
   end
 
+  add_foreign_key "tracked_artists", "artists"
+  add_foreign_key "tracked_artists", "users"
 end

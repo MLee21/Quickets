@@ -150,8 +150,9 @@ a {
 
 .events .info {
   width: 200px;
-  height: 200px;
-  padding: 20px;
+  height: 80px;
+  padding: 8px;
+  border: 1px solid;
 }
 
  .search_image {
@@ -173,3 +174,19 @@ a {
   border-radius: 35px;
 }
 
+li.info {
+  margin-left: 11px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  line-height: 63px;
+  margin-top: 5px;
+}
+
+li .add-music {
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 42px;
+}

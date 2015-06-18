@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+  has_many :tracked_artists
+  has_many :artists, through: :tracked_artists
+
   def self.find_or_create_from_auth(auth)
     user = User.find_or_create_by(provider: auth.provider, uid: auth.uid)
 
