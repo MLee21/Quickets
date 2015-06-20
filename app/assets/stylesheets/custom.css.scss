@@ -148,12 +148,12 @@ a {
   padding: 10px;
 }
 
-.events .info {
-  width: 200px;
-  height: 80px;
-  padding: 8px;
-  border: 1px solid;
-}
+// .events .info {
+//   width: 200px;
+//   height: 80px;
+//   padding: 8px;
+//   border: 1px solid;
+// }
 
  .search_image {
   width: 50px;
@@ -174,19 +174,40 @@ a {
   border-radius: 35px;
 }
 
-li.info {
-  margin-left: 11px;
+// li.info {
+//   margin-left: 11px;
+//   text-align: center;
+//   font-family: 'Amatic SC', cursive;
+//   font-size: 1.5em;
+//   margin-bottom: 5px;
+//   line-height: 63px;
+//   margin-top: 5px;
+// }
+
+// li .add-music {
+//   width: 40px;
+//   height: 40px;
+//   margin-top: 25px;
+//   margin-left: 42px;
+// }
+
+.tracked li {
   text-align: center;
   font-family: 'Amatic SC', cursive;
   font-size: 1.5em;
-  margin-bottom: 5px;
-  line-height: 63px;
-  margin-top: 5px;
 }
 
-li .add-music {
-  width: 40px;
-  height: 40px;
-  margin-top: 25px;
-  margin-left: 42px;
+div.alert {
+  border: 2px solid #aaa;
+  padding: 10px;
+}
+
+div.flash.success {
+  border: 2px solid green; color: green;
+  text-align: center;
+}
+
+div.flash.error {
+  border: 2px solid red; color: red;
+  text-align: center;
 }

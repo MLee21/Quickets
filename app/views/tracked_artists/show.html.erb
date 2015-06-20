@@ -1,8 +1,8 @@
 <%= render :partial => 'partials/navbar' %>
 
 <ul class="small-block-grid-3 tracked">
-  <li>
-    <%= image_tag("default.jpg", class: "default") %>
-  </li>
+    <% @tracked_artists.map do |artist| %>
+      <li><%= artist.name %></li>
+    <% end %>
 </ul>
 

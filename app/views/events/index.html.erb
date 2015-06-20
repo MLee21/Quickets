@@ -1,7 +1,23 @@
 <%= render :partial => 'partials/navbar' %>
-<div class="small-block-grid-6 events">
-  <% @events.flat_map do |event| event[:artists] end.map do |artist| artist[:name] end.each do |artist| %>
-  <li class="info"><%= artist %></li>
-  <li><%= link_to image_tag("add_music.png", class: "add-music"), tracked_artists_path(name: artist), method: :post %></li>
-  <% end.uniq %>
+<div class="small-block-grid-3 events">
+  <% @artists.each do |artist| %>
+      <li class="info"><%= artist.name %>
+      <br>
+      <%= artist.event_venue %>
+      <br>
+      <%= l(artist.event_date, format: :standard) %>
+      <br>
+      <%= link_to "Buy Tickets", artist.event_ticket_url %></li>
+      <%#= link_to image_tag("add_music.png", class: "add-music"), tracked_artists_path(name: artist), method: :post %>
+  <% end %>
 </div>
+<li class="has-form">
+  <div class="row collapse">
+    <div class="large-8 small-9 columns search_bar">
+      <input type="text" placeholder="Search For Artist">
+    </div>
+    <div class="large-4 small-3 columns">
+      <%= link_to image_tag("search.png", class: "search_image") %>
+    </div>
+  </div>
+</li>

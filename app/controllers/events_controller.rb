@@ -5,8 +5,7 @@ class EventsController < ApplicationController
   def index
     service = BandsInTownService.new
     location = session[:city] + "," + " " + session[:state]
-    encoded_location = URI.encode(location)
-    @events = service.nearby_events(encoded_location)
+    @artists = service.nearby_artists_at_events(location)
   end
 
 end
