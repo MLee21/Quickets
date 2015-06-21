@@ -1,23 +1,32 @@
 <%= render :partial => 'partials/navbar' %>
-<div class="small-block-grid-3 events">
-  <% @artists.each do |artist| %>
-      <li class="info"><%= artist.name %>
-      <br>
-      <%= artist.event_venue %>
-      <br>
-      <%= l(artist.event_date, format: :standard) %>
-      <br>
-      <%= link_to "Buy Tickets", artist.event_ticket_url %></li>
-      <%#= link_to image_tag("add_music.png", class: "add-music"), tracked_artists_path(name: artist), method: :post %>
-  <% end %>
-</div>
-<li class="has-form">
-  <div class="row collapse">
-    <div class="large-8 small-9 columns search_bar">
-      <input type="text" placeholder="Search For Artist">
+
+<div ng-controller="ArtistsController">
+  <li class="has-form">
+    <div class="row collapse">
+      <div class="large-8 small-9 columns search_bar">
+        <input ng-model="artistsSearch" type="text" placeholder="Search For Artist">
+      </div>
+      <div class="large-4 small-3 columns">
+        <%= link_to image_tag("search.png", class: "search_image") %>
+      </div>
     </div>
-    <div class="large-4 small-3 columns">
-      <%= link_to image_tag("search.png", class: "search_image") %>
-    </div>
+  </li>
+
+  <div ng-cloak preload-resource="<%= @artists.to_json %>" as="artists"></div>
+
+  <div class="small-block-grid-3 events">
+    <li ng-repeat="artist in artists | artists:artistsSearch" >
+    {{artist.name}}
+    <br>
+    {{artist.event_venue}}
+    <br>
+    {{ moment(artist.event_date).format("LL") }}
+    <br>
+     <a ng-href="{{artist.event_ticket_url}}">Buy Tickets</a>
+    <%= form_tag(tracked_artists_path, method: :post) do %>
+    <%= hidden_field_tag :name, "{{artist.name}}" %>
+    <%= button_tag image_tag("add_music.png") %>
+    <% end %></li>
   </div>
-</li>
+</div>
+

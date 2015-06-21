@@ -19,6 +19,11 @@ gem "omniauth-google-oauth2"
 gem 'responders'
 gem "rails_12factor", group: :production
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular', '1.2.16'
+  gem 'rails-assets-angular-mocks', '1.2.16'
+  gem 'rails-assets-moment'
+end
 
 group :development, :test do
   gem 'byebug'

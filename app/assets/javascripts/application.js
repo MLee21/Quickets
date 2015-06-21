@@ -13,9 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require_tree .
+//= require moment
 //= require angular
 //= require angular-rails-templates
+//= require angular/modules/quickets
+//= require_tree .
+
 
 
 $(function(){
@@ -23,38 +26,3 @@ $(function(){
     $(document).foundation();
   });
 });
-
-'use strict';
- 
-/**
- * @ngdoc overview
- * @name ngFoundationApp
- * @description
- * # ngFoundationApp
- *
- * Main module of the application.
- */
-angular
-  .module('ngFoundationApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch',
-    'mm.foundation'
-  ])
-  .config(function ($routeProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
-      })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
-      })
-      .otherwise({
-        redirectTo: '/'
-      });
-  });
