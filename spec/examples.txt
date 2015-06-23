@@ -1,18 +1,17 @@
-example_id                                                | status | run_time        |
---------------------------------------------------------- | ------ | --------------- |
-./spec/features/user_oauth_authentication_spec.rb[1:1]    | passed | 0.10014 seconds |
-./spec/features/user_oauth_authentication_spec.rb[1:2:1]  | passed | 0.01528 seconds |
-./spec/features/user_oauth_authentication_spec.rb[1:2:2]  | passed | 0.02858 seconds |
-./spec/models/geolocator_state_abbreviations_spec.rb[1:1] | passed | 0.0015 seconds  |
-./spec/models/geolocator_state_abbreviations_spec.rb[1:2] | passed | 0.00571 seconds |
-./spec/models/geolocator_state_abbreviations_spec.rb[1:3] | passed | 0.00152 seconds |
-./spec/models/geolocator_state_abbreviations_spec.rb[1:4] | passed | 0.00147 seconds |
-./spec/models/geolocator_state_abbreviations_spec.rb[1:5] | passed | 0.00145 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:1]  | passed | 0.00966 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:2]  | passed | 0.01285 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:3]  | passed | 0.04399 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:4]  | passed | 0.01008 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:5]  | passed | 0.01132 seconds |
-./spec/services/bands_in_town_nearby_events_spec.rb[1:6]  | passed | 0.01294 seconds |
-./spec/services/bands_in_town_service_spec.rb[1:1]        | passed | 0.00868 seconds |
-./spec/services/bands_in_town_service_spec.rb[1:2]        | passed | 0.01543 seconds |
+example_id                                                | status | run_time               |
+--------------------------------------------------------- | ------ | ---------------------- |
+./spec/features/user_oauth_authentication_spec.rb[1:1]    | passed | 0.11912 seconds        |
+./spec/features/user_oauth_authentication_spec.rb[1:2:1]  | passed | 0.01557 seconds        |
+./spec/features/user_oauth_authentication_spec.rb[1:2:2]  | passed | 0.02617 seconds        |
+./spec/features/user_tracks_artist_spec.rb[1:1]           | failed | 2 minutes 12.7 seconds |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:1] | passed | 0.00167 seconds        |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:2] | passed | 0.00236 seconds        |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:3] | passed | 0.00164 seconds        |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:4] | passed | 0.00173 seconds        |
+./spec/models/geolocator_state_abbreviations_spec.rb[1:5] | passed | 0.00375 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:1]  | passed | 0.01799 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:2]  | passed | 0.01053 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:3]  | passed | 0.01139 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:4]  | passed | 0.01649 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:5]  | passed | 0.01661 seconds        |
+./spec/services/bands_in_town_nearby_events_spec.rb[1:6]  | passed | 0.01232 seconds        |

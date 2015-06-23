@@ -26,3 +26,11 @@ RSpec.configure do |config|
 
   config.infer_spec_type_from_file_location!
 end
+
+RSpec.configure do |config|
+  # any port can be used
+  Capybara.server_port = 3000
+  Ngrok::Rspec.tunnel = { port: Capybara.server_port }
+
+  config.include Ngrok::Rspec
+end

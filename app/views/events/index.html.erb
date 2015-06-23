@@ -1,10 +1,12 @@
 <%= render :partial => 'partials/navbar' %>
 
+<%= content_for :body_class, "artist_index" %>
 <div ng-controller="ArtistsController">
   <li class="has-form">
     <div class="row collapse">
       <div class="large-8 small-9 columns search_bar">
         <input ng-model="artistsSearch" type="text" placeholder="Search For Artist">
+        <%= image_tag("search.png", class: "search") %>
       </div>
       <div class="large-4 small-3 columns">
         <%= link_to image_tag("search.png", class: "search_image") %>
@@ -14,18 +16,20 @@
 
   <div ng-cloak preload-resource="<%= @artists.to_json %>" as="artists"></div>
 
-  <div class="small-block-grid-3 events">
+  <div class="small-block-grid-4 events">
     <li ng-repeat="artist in artists | artists:artistsSearch" >
+    <div class="artist_data">
     {{artist.name}}
     <br>
     {{artist.event_venue}}
     <br>
     {{ moment(artist.event_date).format("LL") }}
     <br>
+    </div>
      <a ng-href="{{artist.event_ticket_url}}">Buy Tickets</a>
     <%= form_tag(tracked_artists_path, method: :post) do %>
     <%= hidden_field_tag :name, "{{artist.name}}" %>
-    <%= button_tag image_tag("add_music.png") %>
+    <%= button_tag image_tag("add_music.png", class: "tiny button") %>
     <% end %></li>
   </div>
 </div>

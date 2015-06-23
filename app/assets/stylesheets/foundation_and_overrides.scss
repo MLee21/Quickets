@@ -435,7 +435,7 @@ $block-grid-default-spacing: rem-calc(0);
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+$include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
 // $button-tny: rem-calc(10);
@@ -464,8 +464,8 @@ $block-grid-default-spacing: rem-calc(0);
 // We use these to control button border styles.
 // $button-border-width: 0;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: #fff;
+$button-bg-hover: #fff;
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;
