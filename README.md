@@ -5,7 +5,7 @@
 
 #Challenges
   # Bands in Town API
-    # Although, there are worse, the Bands in Town API has not been very kind. Although, the documentation led me to believe that you can pass latitude and longitude as a paramater for location, you cannot. This led to:
+    # Although there are worse, the Bands in Town API has not been very kind. The documentation led me to believe that you can pass latitude and longitude as a paramater for location, but you cannot. This led to:
       ## Reverse Geocoding involving an ajax request to get a user's latitude and longitude and use the google maps api to reverse geocode the data to return a city and state via javascript.
 
       ## This also involved posting the data to my session making it accessible to my other controllers and parsing the data using URI before passing it to the API url endpoint.
