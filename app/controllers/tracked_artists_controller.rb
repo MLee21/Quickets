@@ -11,9 +11,15 @@ class TrackedArtistsController < ApplicationController
       redirect_to request.referrer
     else
       TrackedArtist.create(user_id: current_user.id, artist_id: artist.id)
-      flash[:success] = "You are now following #{artist.name}"
+      flash[:success] = "You are now tracking #{artist.name}"
       redirect_to tracked_artist_path
     end
+  end
+
+  def destroy
+    artist = Artist.find_by(name: params[:name])
+    artist.destroy
+    redirect_to tracked_artist_path
   end
 
 end

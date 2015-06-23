@@ -111,6 +111,11 @@ GEM
     multi_json (1.11.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    ngrok-rspec (1.1.16)
+      capybara (~> 2.4)
+      ngrok-tunnel (~> 2.0.16)
+      rspec (~> 3.1)
+    ngrok-tunnel (2.0.17)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     nyan-cat-formatter (0.11)
@@ -264,6 +269,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   mocha
+  ngrok-rspec
   nyan-cat-formatter
   omniauth-google-oauth2
   pg

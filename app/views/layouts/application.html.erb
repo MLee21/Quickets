@@ -15,7 +15,7 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body ng-app="Quickets">
+  <body ng-app="Quickets" class="<%= yield (:body_class) %>">
 
     <% flash.each do |type, message| %>
     <div class="alert flash <%= type %>">

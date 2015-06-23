@@ -1,8 +1,11 @@
 <%= render :partial => 'partials/navbar' %>
 
-<ul class="small-block-grid-3 tracked">
-    <% @tracked_artists.map do |artist| %>
-      <li><%= artist.name %></li>
-    <% end %>
-</ul>
+<div class="tracked_background">
+  <ul class="small-block-grid-4 tracked">
+      <% @tracked_artists.map do |artist| %>
+        <li><%= artist.name %>
+        <p><%= link_to "Untrack", tracked_artist_path(name: artist.name), method: :delete %></p></li>
+      <% end %>
+  </ul>
+</div>
 

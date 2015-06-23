@@ -40,8 +40,9 @@ group :test do
   gem 'mocha'
   gem 'vcr'
   gem 'webmock'
-  gem 'selenium-webdriver'
+  gem 'poltergeist'  
   gem 'database_cleaner'
   gem "nyan-cat-formatter"
+  gem 'ngrok-rspec'
 end
 
