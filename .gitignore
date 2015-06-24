@@ -20,3 +20,9 @@
 
 # Ignore test examples
   spec/examples.txt
+
+#simplecov
+  coverage
+
+#public/assets
+  public/assets

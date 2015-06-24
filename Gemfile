@@ -18,6 +18,7 @@ gem 'figaro'
 gem "omniauth-google-oauth2"
 gem 'responders'
 gem "rails_12factor", group: :production
+gem "skylight"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular', '1.2.16'
@@ -44,5 +45,6 @@ group :test do
   gem 'database_cleaner'
   gem "nyan-cat-formatter"
   gem 'ngrok-rspec'
+  gem 'simplecov'
 end
 
