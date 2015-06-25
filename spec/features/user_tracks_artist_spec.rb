@@ -1,4 +1,4 @@
-require "rails_helper"
+# require "rails_helper"
 
 # feature "a user tracks a single artist" do
 #   attr_reader :service
