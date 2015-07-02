@@ -18,8 +18,11 @@ class TrackedArtistsController < ApplicationController
 
   def destroy
     artist = Artist.find_by(name: params[:name])
-    artist.destroy
-    redirect_to tracked_artist_path
+    if artist.destroy
+      redirect_to tracked_artist_path
+    else
+      flash[:error] = "Artist was not deleted."
+    end
   end
 
 end

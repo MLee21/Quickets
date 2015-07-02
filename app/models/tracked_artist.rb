@@ -1,4 +1,4 @@
 class TrackedArtist < ActiveRecord::Base
-  has_many :users
-  has_many :artists
+  belongs_to :user
+  belongs_to :artist
 end

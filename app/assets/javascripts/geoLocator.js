@@ -4,7 +4,7 @@ $(document).ready(function() {
   
   navigator.geolocation.getCurrentPosition(function(pos) {
     geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(pos.coords.latitude,pos.coords.longitude);
+    var latlng = new google.maps.LatLng(pos.coords.latitude, pos.coords.longitude);
     geocoder.geocode({'latLng': latlng}, function(results, status) {
       if (status == google.maps.GeocoderStatus.OK) {
         //Check result 0
