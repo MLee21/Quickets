@@ -6,4 +6,3 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   }
 end
 
-OmniAuth.config.full_host = Rails.env.production? ? 'http://quickets.herokuapp.com' : 'http://localhost:3000'
